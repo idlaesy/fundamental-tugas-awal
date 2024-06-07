@@ -1,0 +1,142 @@
+* {
+  padding: 0;
+  margin: 0;
+
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #354375;
+  color: #fffcf5;
+  border: #fffcf5;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+header {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+}
+.app-name {
+  font-size: 20px;
+  text-align: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0px auto;
+  padding: 20px;
+  border: 1px solid #fffcf5;
+  border-radius: 5px;
+  display: grid;
+  place-items: center;
+}
+.title-section > h2 {
+  font-size: 25px;
+}
+#addNotes {
+  margin: 20px auto;
+}
+
+#addNotes > fieldset {
+  padding: 20px;
+  color: #fffcf5;
+  border-color: #fffcf5;
+  border-radius: 5px;
+}
+#addNotes > fieldset > legend {
+  font-size: 20px;
+}
+
+.form-group {
+  margin: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  display: block;
+  padding: 0.5rem 0.3rem;
+
+  width: 500px;
+  border: 2px solid #fffcf5;
+  border-radius: 5px;
+}
+
+button {
+  font-size: 15px;
+  margin-top: 20px;
+  padding: 0.8rem 1rem;
+  color: #354375;
+  background-color: #fffcf5;
+  border: 2px solid #fffcf5;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: beige;
+}
+
+#displayNotes {
+  margin: 20px;
+}
+
+.display-notes #container-notes {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-auto-rows: auto;
+  grid-auto-columns: auto;
+  margin-block: 1rem;
+  padding: 20px;
+  gap: 10px;
+}
+
+#container-notes > .note {
+  width: 100%;
+  display: block;
+  padding: 10px;
+  border: 2px solid #fffcf5;
+  border-radius: 5px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.note h3 {
+  font-style: italic;
+  margin-top: 0px;
+  padding-bottom: 10px;
+}
+
+.note p {
+  font-size: 14px;
+  padding-bottom: 5px;
+}
+
+.note small {
+  font-size: 12px;
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 5px;
+    align-items: center;
+  }
+
+  .add-notes {
+    margin: 0px;
+    padding: 5px;
+    justify-content: center;
+  }
+  .note {
+    font-size: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
+}
+
+/* lanjutin lagi responsivenya nanti */
